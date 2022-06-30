@@ -1,0 +1,11 @@
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\Tracing.exe.config
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\Tracing.exe
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\Tracing.pdb
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.csproj.AssemblyReference.cache
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.csproj.SuggestedBindingRedirects.cache
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.DaTrace.resources
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.Properties.Resources.resources
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.csproj.GenerateResource.cache
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.csproj.CoreCompileInputs.cache
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.exe
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.pdb
