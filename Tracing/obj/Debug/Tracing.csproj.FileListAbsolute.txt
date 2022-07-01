@@ -9,3 +9,14 @@ C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.csproj.GenerateRes
 C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.csproj.CoreCompileInputs.cache
 C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.exe
 C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.pdb
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\AForge.dll
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\AForge.Video.dll
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\zxing.dll
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\zxing.presentation.dll
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\AForge.xml
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\AForge.Video.xml
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\zxing.xml
+C:\Users\Carlo\source\repos\Tracing\Tracing\bin\Debug\zxing.presentation.xml
+C:\Users\Carlo\source\repos\Tracing\Tracing\obj\Debug\Tracing.csproj.CopyComplete

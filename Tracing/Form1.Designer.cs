@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -49,6 +50,13 @@
             this.InfotxtBox1 = new System.Windows.Forms.RichTextBox();
             this.InfotxtBox2 = new System.Windows.Forms.RichTextBox();
             this.InfotxtBox3 = new System.Windows.Forms.RichTextBox();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboDevice = new System.Windows.Forms.ComboBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.txtQRCode = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // btn1
@@ -227,7 +235,7 @@
             // 
             // InfotxtBox1
             // 
-            this.InfotxtBox1.Location = new System.Drawing.Point(276, 3);
+            this.InfotxtBox1.Location = new System.Drawing.Point(290, 3);
             this.InfotxtBox1.Name = "InfotxtBox1";
             this.InfotxtBox1.Size = new System.Drawing.Size(133, 239);
             this.InfotxtBox1.TabIndex = 18;
@@ -236,7 +244,7 @@
             // 
             // InfotxtBox2
             // 
-            this.InfotxtBox2.Location = new System.Drawing.Point(415, 3);
+            this.InfotxtBox2.Location = new System.Drawing.Point(429, 3);
             this.InfotxtBox2.Name = "InfotxtBox2";
             this.InfotxtBox2.Size = new System.Drawing.Size(133, 239);
             this.InfotxtBox2.TabIndex = 19;
@@ -245,19 +253,76 @@
             // 
             // InfotxtBox3
             // 
-            this.InfotxtBox3.Location = new System.Drawing.Point(554, 3);
+            this.InfotxtBox3.Location = new System.Drawing.Point(568, 3);
             this.InfotxtBox3.Name = "InfotxtBox3";
             this.InfotxtBox3.Size = new System.Drawing.Size(133, 239);
             this.InfotxtBox3.TabIndex = 20;
             this.InfotxtBox3.Text = "";
             this.InfotxtBox3.TextChanged += new System.EventHandler(this.InfotxtBox3_TextChanged);
             // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(513, 479);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(227, 23);
+            this.btnStart.TabIndex = 21;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 258);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 16);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Camera";
+            // 
+            // cboDevice
+            // 
+            this.cboDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDevice.FormattingEnabled = true;
+            this.cboDevice.Location = new System.Drawing.Point(83, 255);
+            this.cboDevice.Name = "cboDevice";
+            this.cboDevice.Size = new System.Drawing.Size(326, 21);
+            this.cboDevice.TabIndex = 23;
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox.Location = new System.Drawing.Point(12, 282);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(495, 334);
+            this.pictureBox.TabIndex = 24;
+            this.pictureBox.TabStop = false;
+            // 
+            // txtQRCode
+            // 
+            this.txtQRCode.Location = new System.Drawing.Point(513, 282);
+            this.txtQRCode.Multiline = true;
+            this.txtQRCode.Name = "txtQRCode";
+            this.txtQRCode.Size = new System.Drawing.Size(227, 191);
+            this.txtQRCode.TabIndex = 25;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // DaTrace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(1065, 638);
+            this.ClientSize = new System.Drawing.Size(752, 628);
+            this.Controls.Add(this.txtQRCode);
+            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.cboDevice);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.InfotxtBox3);
             this.Controls.Add(this.InfotxtBox2);
             this.Controls.Add(this.InfotxtBox1);
@@ -280,8 +345,11 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Name = "DaTrace";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaTrace";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DaTrace_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,6 +378,12 @@
         private System.Windows.Forms.RichTextBox InfotxtBox1;
         private System.Windows.Forms.RichTextBox InfotxtBox2;
         private System.Windows.Forms.RichTextBox InfotxtBox3;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cboDevice;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.TextBox txtQRCode;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
