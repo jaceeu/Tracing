@@ -136,12 +136,24 @@ namespace Tracing
                 Result result = barcodeReader.Decode((Bitmap)pictureBox.Image);
                 if(result != null)
                 {
-                    txtQRCode.Text = result.ToString();
+                    QRinfo.Text = result.ToString();
                     timer1.Stop();
                     if (captureDevice.IsRunning)
                         captureDevice.Stop();
                 }
             }
+        }
+
+        private void Fillbtn_Click(object sender, EventArgs e)
+        {
+            string[] Autofill = QRinfo.Lines;
+
+            txtBox1.Text = Autofill[0];
+            txtBox2.Text = Autofill[1];
+            txtBox3.Text = Autofill[2];
+            txtBox4.Text = Autofill[3];
+            txtBox5.Text = Autofill[4];
+            txtBox6.Text = Autofill[5];
         }
     }
 }
